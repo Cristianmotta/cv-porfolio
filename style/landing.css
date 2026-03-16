@@ -1,0 +1,95 @@
+.landing-nav{
+    margin:0;
+    height: 100vh; 
+}
+
+.container-landing-nav{
+  background-image: linear-gradient(90deg, #667eea42, #764ba244), url(../img/bynari.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.container-parrafo-landing{
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto;
+    padding: 40px 20px;
+
+    text-align: center;
+}
+
+.title-landig{
+    font-family: 'Opensans';
+    font-size: clamp(2rem,4vw,2.8rem);
+    color: var(--color-title);
+}
+
+.parrafo-landing{
+    font-family: 'Opensans';
+    font-size: clamp(1rem,2vw,1.2rem);
+    color: var(--color-p);
+}
+
+.container-botons-nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    padding: 30px 20px;
+}
+
+.botton-landing{
+  padding: 10px 25px;
+
+  backdrop-filter: blur(25px);
+
+  border: 2px solid white;
+  border-radius: 12px;
+
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-descargas{
+    margin: 8px;
+    color: var(--color-p);
+    font-family: 'Opensans';
+    transition: 0.2s all ease;
+}
+
+.landing-git{
+    margin: 8px;
+    color: var(--color-p);
+    font-family: 'Opensans';
+    transition: 0.2s all ease;
+}
+
+.botton-landing:hover{
+    
+    background: var(--animation-color);
+}
+
+.landing-descargas:hover{
+    padding: 0.2em;
+    color: var(--color-title);
+    text-decoration: underline;
+}
+
+.landing-git:hover{
+    padding: 0.2em;
+    color: var(--color-negro);
+    text-decoration: underline;
+}

@@ -1,0 +1,81 @@
+#quien-soy{
+     width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #020c4d 0%, #04125c 100%); /* Ligero cambio de color para más profundidad */
+    display: flex;
+    align-items: center; /* Centrar verticalmente el contenido */
+    padding: 2rem 0;
+}
+
+.contanier-section-Qs{
+    padding: clamp(0px,5vw,4px);
+    margin: 25px;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+.titulo{
+   color: var(--color-morado-claro); /* Fallback blanco */
+    font-size: clamp(2rem, 6vw, 3.5rem); /* Tamaño más grande en desktop */
+    text-align: center;
+    margin-bottom: 1.5rem; /* Espacio inferior */
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.container-item-i{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    padding: 30px;
+}
+
+.item-1{
+    flex: 2;
+    color: var(--color-negro);
+    padding: 20px;
+}
+
+.ex_pli{
+    margin-top: 20px;
+    font-family: 'OpenSans';
+    line-height: 1.6;
+}
+
+.item-2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.img-1 {
+    width: min(250px, 80%); /* Tamaño máximo y responsivo */
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3); /* Sombra para dar profundidad */
+    border: 4px solid rgba(255,255,255,0.2); /* Borde sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    border-color: rgba(255,255,255,0.4);
+}
+
+@media (max-width: 768px){
+
+.container-item-i{
+    flex-direction: column;
+    text-align: center;
+}
+
+}

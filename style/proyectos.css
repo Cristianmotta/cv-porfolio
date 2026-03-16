@@ -1,0 +1,311 @@
+#proyectos{
+    min-height: 120vh;
+    background: linear-gradient(135deg, #020c4d 0%, #0a1a5e 100%);
+    margin-top: 35px;
+}
+
+.proyectos {
+    width: 97%; /* Ocupa al menos toda la pantalla */
+    background: linear-gradient(135deg, #020c4d 0%, #0a1a5e 100%);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    margin: 12px;
+}
+
+/* Título de la sección */
+.title-proyect {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 60px;
+    color: white;
+}
+
+.title-proyect-h {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    margin-bottom: 20px;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    position: relative;
+    display: inline-block;
+}
+
+.title-proyect-h::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.title-proyect-p {
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+/* Grid de proyectos */
+.proyect {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px;
+}
+
+/* Tarjeta de proyecto */
+.container-proyect {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container-proyect:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
+}
+
+/* Imagen del proyecto */
+.container-proyect-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: rgba(0,0,0,0.2); /* Color de fondo mientras carga la imagen */
+}
+
+.img-proyect {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.container-proyect:hover .img-proyect {
+    transform: scale(1.05);
+}
+
+/* Contenido de la tarjeta */
+.container-proyect-p {
+    padding: 25px 20px 15px;
+    color: rgba(255,255,255,0.9);
+    font-size: 1rem;
+    line-height: 1.6;
+    flex: 1;
+}
+
+.container-proyect-p p {
+    margin: 0;
+}
+
+/* Tecnologías (etiquetas) */
+.container-proyect-list-p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 20px 15px;
+    justify-content: flex-start;
+}
+
+.container-proyect-element-list-p {
+    background: rgba(102, 126, 234, 0.25);
+    border: 1px solid rgba(102, 126, 234, 0.5);
+    border-radius: 40px;
+    padding: 6px 18px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    backdrop-filter: blur(4px);
+    display: inline-block;
+}
+
+/* Si necesitas diferenciar cada tecnología, puedes usar colores distintos */
+.element-list-p,
+.element-list-p-css,
+.element-list-p-jav {
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+}
+
+/* Contenedor de enlaces (GitHub, etc.) */
+.container-proyect-list {
+    display: flex;
+    gap: 15px;
+    padding: 0 20px 20px;
+    flex-direction: row;
+}
+
+.container-proyect-elements {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.container-proyect-elements:hover {
+    background: #667eea;
+    transform: translateY(-3px);
+    border-color: transparent;
+}
+
+.container-proyect-elements a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* Icono de GitHub */
+.git-proyect {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0) invert(1); /* Para iconos oscuros */
+    transition: transform 0.2s ease;
+}
+
+.container-proyect-elements:hover .git-proyect {
+    transform: rotate(360deg);
+}
+
+/* Icono de compartir (hover) */
+.elemen-img {
+    width: 19px;
+    height: 19px;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+    filter: brightness(0) invert(1);
+}
+
+.container-proyect-elements:hover .elemen-img {
+    opacity: 1;
+}
+
+.elements-github {
+    margin: 0;
+    color: white;
+}
+
+/* Botón "Visitar" */
+.botton-proyect {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px 25px;
+}
+
+.botton-proyect-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 280px;
+}
+
+.botton-proyect-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(102, 126, 234, 0.5);
+    background: linear-gradient(135deg, #5a6fd8, #6a3b9e);
+}
+
+.botton-proyect-item h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.botton-proyect-item img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .proyectos {
+        padding: 60px 15px;
+    }
+
+    .title-proyect {
+        margin-bottom: 40px;
+    }
+
+    .title-proyect-h {
+        font-size: 2.5rem;
+    }
+
+    .title-proyect-p {
+        font-size: 1rem;
+    }
+
+    .proyect {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .container-proyect-p {
+        padding: 20px 15px;
+    }
+
+    .container-proyect-list {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 15px 20px;
+    }
+
+    .botton-proyect {
+        padding: 0 15px 25px;
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .container-proyect-list-p {
+        justify-content: center;
+    }
+
+    .container-proyect-element-list-p {
+        font-size: 0.75rem;
+        padding: 5px 12px;
+    }
+
+    .botton-proyect-item {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}

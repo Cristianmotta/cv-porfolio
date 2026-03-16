@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background:  linear-gradient(135deg, #11024d 0%, #14181877 100%);
+}
+
+:root{
+    --color-negro: #000000;
+    --color-morado-claro: #667eea;
+    --color-azul-claro: #155395f6;
+    --color-p: #dbdbdf;
+    --color-title: #a4a2a2;
+    --animation-color: linear-gradient(135deg, #667eea 0%, #11024d 100%);
+    --color-landing: #14181877;
+    --section-color:  rgba(5, 5, 81, 0.797);
+}

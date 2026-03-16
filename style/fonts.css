@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/static/OpenSans-Italic.ttf);
+    font-size: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/static/OpenSans-SemiBold.ttf);
+    font-size: normal;
+    font-weight: bold;
+}

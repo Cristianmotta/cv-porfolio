@@ -1,0 +1,52 @@
+@import url(./fonts.css);
+
+section{
+  scroll-margin-top: 80px;
+}
+
+#nav-cv {
+    min-height: 40px; /* Ajusta según la altura de tu nav */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(40px) saturate(180%);
+    background: linear-gradient(to bottom rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.05));
+    border: 1px solid rgba(255, 255, 255, 0,2); /* Mismo fondo que tenías en .porfolio-nav */
+    padding: 10px 20px; 
+}
+
+.nav-navegation{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.title-h1-nav{
+    color: var(--color-title);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.navegation{
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+}
+
+.navegation li{ 
+    list-style: none;
+}
+
+.nav-navegation a{
+    text-decoration: none;
+    color: var(--color-p);
+    margin: 0 auto;
+    padding: 12px;
+    transition: 0.5s all ease;
+}
+
+.nav-navegation a:hover{
+    text-decoration: underline;
+    color: var(--color-azul-claro);
+}
