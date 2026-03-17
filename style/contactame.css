@@ -60,7 +60,7 @@
 .container-HV {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
+    gap: 35px;
     justify-items: center;
     align-items: start;
 }
@@ -138,7 +138,7 @@
     }
 
     .container-HV {
-        gap: 20px;
+        gap: 10px;
     }
 
     .item-3 {
@@ -161,7 +161,7 @@
     }
 
     .container-HV {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
     }
 
     .item-3 {
