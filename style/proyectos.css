@@ -196,7 +196,6 @@
 .elemen-img {
     width: 19px;
     height: 19px;
-    opacity: 0.8;
     transition: opacity 0.2s ease;
     filter: brightness(0) invert(1);
 }
